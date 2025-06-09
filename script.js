@@ -66,7 +66,7 @@ if (savedLibrary) {
 async function fetchTimeslots(date, uid) {
   const selectedLibrary = document.getElementById("library").value;
 
-  const seats = await fetch(`/seats/${selectedLibrary}.json`).then(response =>
+  const seats = await fetch(`/kurtosis/seats/${selectedLibrary}.json`).then(response =>
     response.json()
   );
 
